@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title="SurveyForm"></title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Personal Survey</h1>
+<p id="description">This Survey is for Personal Test Only</p>
+<div class="backgroundbox"> 
+<form id="survey-form">
+<fieldset>
+  <label id="name-label">Name: <input id="name"type="text" placeholder="Enter your name" required/></label>
+  <label id="email-label">Email: <input id= "email" type="email" placeholder="Enter your email" required/></label>
+  <label id="number-label">Number(optional): <input id="number" type="number" min="13" max="120" placeholder="Age" /></label>
+</fieldset>
+<fieldset>
+<legend>Which Programming Language/s have you used? (Check all that apply)</legend>
+  <input type="checkbox" value="1" class="inline"/>HTML<br>
+    <input type="checkbox" value="2" class="inline"/>CSS<br>
+  <input type="checkbox" value="3" class="inline"/>JavaScript<br>
+  <input type="checkbox" value="4" class="inline"/>Python<br>
+  <input type="checkbox" value="5" class="inline"/>C++<br>
+</label>
+</fieldset>
+<fieldset>
+<legend>Would you like to recommend this to an IT beginner?</legend>
+<label for="yes"><input id="yes" type="radio" name="recommendation" value="yes" class="inline" checked /> Yes</label>
+<label for="no"><input id="no" type="radio" name="recommendation" value="no" class="inline" /> No</label>
+</fieldset>
+<fieldset>
+  <label>Which Programming language do you think is the easiest?
+  <select id="dropdown">
+    <option>HTML</option>
+    <option>CSS</option>
+    <option>JavaScript</option>
+    <option>Python</option>
+    <option>C++</option>
+  </select>
+</label>
+<label>Additional comment:</label>
+<textarea></textarea>
+</fieldset>
+<button type="submit" id="submit" class="submit-button" /> Submit</button>
+</form>
+</div>
+</body>
+</html>
